@@ -19,7 +19,7 @@ services:
     ports:
       - 3000:3000
     networks:
-      - todoapp
+      - todo-app
   todotests:
     depends_on:
       - todoback
@@ -31,5 +31,6 @@ services:
       - FRONT_PORT=3000
     networks:
       - todo-app
+
 networks:
   todo-app:
